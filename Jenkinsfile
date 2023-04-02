@@ -2,7 +2,7 @@ pipeline {
     agent {
         node { label "maven" }
     }
-    environment { QUAY = credentials('QUAY_USER') }
+    environment { QUAY = credentials('velrajarichandran') }
     stages {
         stage("Unit Tests") {
            steps {
